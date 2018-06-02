@@ -1,0 +1,532 @@
+@font-face {
+  font-family: 'ClearSans';
+  src: url('../fonts/ClearSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClearSans-Light.woff') format('woff'), url('../fonts/ClearSans-Light.ttf')  format('truetype'), url('../fonts/ClearSans-Light.svg#ClearSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'),  url('MullerLight.otf')  format('opentype'),
+	     url('../fonts/MullerLight.woff') format('woff'), url('../fonts/MullerLight.ttf')  format('truetype'), url('../fonts/MullerLight.svg#MullerLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerRegular.otf')  format('opentype'),
+	     url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf')  format('truetype'), url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerMedium.otf')  format('opentype'),
+	     url('../fonts/MullerMedium.woff') format('woff'), url('../fonts/MullerMedium.ttf')  format('truetype'), url('../fonts/MullerMedium.svg#MullerMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerBold.otf')  format('opentype'),
+	     url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf')  format('truetype'), url('../fonts/MullerBold.svg#MullerBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerBlack.otf')  format('opentype'),
+	     url('../fonts/MullerBlack.woff') format('woff'), url('../fonts/MullerBlack.ttf')  format('truetype'), url('../fonts/MullerBlack.svg#MullerBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+	margin:0;
+	padding:0;  
+	font-family: 'Muller';  
+	font-weight: 400;
+	font-size: 15px;
+	line-height:1.5;
+	color:rgb(0, 0, 0);
+	min-width: 360px;
+    letter-spacing: 1px;
+}
+
+.wrapper{
+	max-width:1200px;
+	margin:0 auto;
+	padding:0 40px;
+}
+
+header, footer, nav, section, main, article, aside{
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a{
+    font-size: 13px;
+    color: rgb(34, 154, 255);
+}
+
+a:hover{
+	color:#0054bd;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex.between {
+    justify-content: space-between;
+}
+
+.button{ 
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    outline: none;
+    box-sizing: border-box;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+/* header */
+
+header {
+    height: 70px;
+}
+
+header .logo{
+    float: left;
+    text-decoration: none;    
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin: auto 0;
+}
+
+header .right_part {
+    margin-right: 25px;
+}
+
+header nav ul{
+	margin:0;
+	padding:0;    
+	overflow: hidden;
+}
+
+header nav li{
+    display: block;
+    float: left;
+}  
+
+header nav a{
+    display: block; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    line-height: 70px;
+    padding: 0 10px;
+}
+
+header .button {
+    border: 2px solid rgb(0, 112, 61);
+    background-color: rgba(151, 0, 114, 0);
+    width: 186px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 112, 61);
+    line-height: 42px;
+    margin: 14px 18px;
+}
+
+header .icon {
+    display: inline-block;
+    position: relative;
+    background: url(../images/sprites.svg) -10px -12px;
+	width: 19px;
+	height: 14px;
+    margin: auto 0;
+    padding: 0 9px;
+}
+
+header .messages.icon::before {
+    content: "8";
+    background-color: rgb(0, 112, 61);
+    border-radius: 6px;
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    right: 6px;
+    top: -10px;
+    font-size: 10px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header .favorite.icon {
+    background-position: -68px -10px;
+	width: 18px;
+	height: 16px;
+}
+
+header .login.icon {
+    background-position: -130px -10px;
+	width: 17px;
+	height: 16px;
+    padding: 0 0 0 26px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* main_screen */
+
+.main_screen {
+    background: url(../images/pattern.svg) center, linear-gradient(to top, #54d169, #a1eb76);
+    padding: 80px 0 90px;
+    overflow: hidden;
+}
+
+.main_screen .wrapper {
+    position: relative;
+}
+
+.main_screen .cat_background {
+    background: url(../images/Cat&Dog-pic.png) no-repeat;
+    width: 385px;
+    height: 400px;
+    position: absolute;
+    left: 23px;
+    bottom: -106px;
+}
+
+.main_screen h1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.main_screen .friends {
+    font-size: 18px;
+    text-align: center;
+}
+
+.main_screen .wpcf7 {
+    position: relative;
+    margin-top: 43px;
+}
+
+.main_screen .wpcf7 .wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_screen .wpcf7 .wpcf7-form-control-wrap {
+    display: block;
+}
+
+.main_screen .wpcf7 .wpcf7-form-control {
+    display: block;
+    box-sizing: border-box;
+    height: 60px;
+    max-width: 400px;
+    line-height: 60px;
+    font-size: 18px;
+    color: rgb(108, 108, 108);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.main_screen .wpcf7 input:not([type=submit]):focus {
+	border: 1px solid rgb(0, 112, 61);
+}
+
+.main_screen .wpcf7 .wpcf7-form-control-wrap .for_example, .main_screen .wpcf7 .wpcf7-form-control-wrap .for_example a  {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+}
+
+.main_screen .wpcf7 .cat_dog {
+    width: 100px;
+    height: 60px;
+    margin: 0 2px;
+}
+
+.main_screen .wpcf7 .city {
+    width: 300px;
+    height: 60px;
+}
+
+.main_screen .wpcf7 .cat {
+    background: url(../images/sprites.svg);
+    background-position: -9px -75px;
+	width: 34px;
+	height: 31px;
+    position: absolute;
+    left: 0;
+}
+
+.main_screen .wpcf7 .button {
+    background-color: rgb(0, 112, 61);
+    width: 206px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: none;
+    margin-left: 20px;
+}
+
+.main_screen .wpcf7 .details_search {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    margin-top: 6px;
+}
+
+/* advertisement_screen */
+
+.advertisement_screen {
+    padding: 45px 0 17px;
+}
+
+.advertisement_screen .columns .right {
+    width: 300px;
+    padding: 5px 0;
+}
+
+.advertisement_screen .columns .right .banner1 {
+    background-color: rgb(235, 235, 235);
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.advertisement_screen .columns .right .banner2 {
+    background-color: aliceblue;
+    height: 160px;
+}
+
+.advertisement_screen .columns .left {
+    flex: 1;
+}
+
+.advertisement_screen .columns .left .advertisement {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding-bottom: 25px;
+    margin: 0 50px 25px 0;
+}
+
+.advertisement_screen .left .photo {
+    background-color: blue;
+    width: 240px;
+    height: 180px;
+    margin: 5px 0;
+}
+
+.advertisement_screen .left .info {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.advertisement_screen .left .info h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.advertisement_screen .left .info .sex {
+    font-size: 13px;
+    padding: 0 26px;
+    letter-spacing: 0.1px;
+}
+
+.advertisement_screen .left .info .sex::before {
+    content: "";
+    background: url(../images/sprites.svg);
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.advertisement_screen .left .info .description {
+    font-size: 13px;
+    font-family: "ClearSans";
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+    text-align: justify;
+    margin: 16px 0;
+}
+
+.advertisement_screen .left .info .details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advertisement_screen .left .info .detail {
+    padding: 10px 18px 10px 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+    position: relative;
+}
+
+
+.advertisement_screen .left .info .detail::before {
+    content: "";
+    background: url(../images/sprites.svg) -10px -158px;
+	width: 15px;
+	height: 14px;
+    position: absolute;
+    left: 0;
+}
+
+.advertisement_screen .left .info .detail.viewers::before {
+    background-position: -67px -162px;
+	width: 17px;
+	height: 10px;
+    top: 13px;
+}
+
+.advertisement_screen .left .info .detail.number::before {
+    background-position: -130px -162px;
+	width: 10px;
+	height: 10px;
+    top: 13px;
+}
+
+.favorite.button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0 8px 0 33px;
+    letter-spacing: 0.4px;
+    margin: 0 0 0 auto;
+    position: relative;
+}
+
+.favorite.button::before {
+    content: "";
+    background: url(../images/sprites.svg) -68px -10px;
+	width: 18px;
+	height: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+/* search_screen */
+
+.search_screen {
+    padding-bottom: 90px;
+}
+
+.search_screen h3 {
+    font-size: 28px;
+    font-weight: 700;
+} 
+
+.search_screen .columns {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+} 
+
+.search_screen .columns .column {
+    padding-right: 120px;
+}
+
+.search_screen .columns a {
+    display: block;
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+/* footer */
+
+footer, footer a {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+}
+
+footer .first_line {
+    background-color: #f7f7f7;
+    padding: 24px 0 17px;
+}
+
+footer .first_line .mail a {
+    text-decoration: none;
+}
+
+footer .first_line .social_icons .icon {
+    display: inline-block;
+    background: url(../images/sprites.svg) -10px -230px;
+	width: 51px;
+	height: 52px;
+}
+
+footer .first_line .social_icons .icon.vk {
+    background-position: -108px -230px;
+}
+
+footer .first_line .social_icons .icon.insta {
+    background-position: -206px -230px;
+}
+
+footer .second_line {
+    background-color: #d5d5d5;
+    padding: 14px 0;
+}
+
+footer .second_line .developers {
+    font-weight: 300;
+}
+
+/* Media */
+
+
+@media screen and (max-width: 1279px) {
+
+    
+}
+
+@media screen and (max-width: 1023px) {
+ 
+
+}
+
+@media screen and (max-width: 767px) {
+	
+
+}
+
+
+@media screen and (max-width: 568px) {
+	
+	
+}
