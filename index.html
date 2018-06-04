@@ -27,46 +27,81 @@
             <span></span>
             </a>
             </div>
-            <a href="#" class="button">Подать объявление</a>
-            <a class="messages icon" href="#"></a>
-            <a class="favorite icon" href="#"></a>
-            <a class="login icon" href="#">Войти</a>
+            <a href="#" class="announce">Подать объявление</a>
+            <div class="messages">
+                <a class="message icon" href="#"></a>
+                <div class="quantity">8</div>
+            </div>
+            <a class="heart icon" href="#"></a>
+            <div class="login">
+               <a href="#">Войти</a> 
+            </div>
         </div>
       </div>
     </header>
     <section class="main_screen">
        <div class="wrapper">
            <div class="cat_background"></div>
-           <h1>Собаки и кошки в добрые руки</h1>
-           <div class="friends">Друзей не покупают, а находят на necobu.ru</div>
-           <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="ru-RU" dir="ltr">
-                <form class="wpcf7-form">
-                    <span class="wpcf7-form-control-wrap">
-                        <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Введите ключевые слова">
-                        <div class="for_example">
-                            Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
-                        </div>
-                    </span>
-                    <span class="wpcf7-form-control-wrap">
-                        <select class="cat_dog" name="type" size="1">
-                            <option class="cat" value="cat">a</option>
-                            <option class="dog" value="dog"></option>
-                        </select>
-                    </span>
-                    <span class="wpcf7-form-control-wrap">
-                        <select class="city" name="type" size="1">
-                            <option value="">Москва</option>
-                            <option value="">Санкт-Петербург</option>
-                            <option value="">Самара</option>
-                        </select>
-                    </span>
-                    <span class="wpcf7-form-control-wrap">
-                        <button class="green button">найти друга</button>
-                        <a class="details_search" href="#">Расширенный поиск</a>
-                    </span>
-                </form>
+           <div class="inner">
+               <h1>Собаки и кошки в добрые руки</h1>
+               <div class="friends">Друзей не покупают, а находят на neкobu.ru</div>
+               <div class="wpcf7">
+                    <form class="wpcf7-form">
+                        <span class="wpcf7-form-control-wrap">
+                            <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Введите ключевые слова">
+                            <div class="for_example">
+                                Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
+                            </div>
+                        </span>
+                        <span class="wpcf7-form-control-wrap">
+                            <div class="select cat_dog">
+                               <div class="select_field">
+                                   <div class="field cat"></div>
+                               </div>
+                               <ul>
+                                   <li>
+                                       <div class="field cat"></div>
+                                   </li>
+                                   <li>
+                                       <div class="field dog"></div>
+                                   </li>
+                               </ul>
+                            </div>
+                        </span>
+                        <span class="wpcf7-form-control-wrap city">
+                            <input type="text" name="city" value="Москва" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                        </span>
+                        <span class="wpcf7-form-control-wrap">
+                            <button>найти друга</button>
+                            <a class="extended_search_button" href="#">Расширенный поиск</a>
+                        </span>
+                    </form>
+                </div>
             </div>
        </div>
+       <div class="extended_search flex">
+            <div class="select">
+               <div class="select_field">Пол: любой</div>
+               <ul>
+                   <li class="cat">девочка</li>
+                   <li class="dog">мальчик</li>
+               </ul>
+            </div>
+            <div class="select">
+               <div class="select_field">Размер: любой</div>
+               <ul>
+                   <li class="cat">большой</li>
+                   <li class="dog">маленький</li>
+               </ul>
+            </div>
+            <div class="select">
+               <div class="select_field">Шерсть: любая</div>
+               <ul>
+                   <li class="cat">гладенькая</li>
+                   <li class="dog">пушистенькая</li>
+               </ul>
+            </div>
+        </div>
     </section>
     <section class="advertisement_screen">
         <div class="wrapper">
@@ -79,7 +114,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -87,7 +122,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +133,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -106,7 +141,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -117,7 +152,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -125,7 +160,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +171,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -144,7 +179,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +190,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -163,7 +198,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -174,7 +209,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -182,7 +217,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +228,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -201,7 +236,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +247,7 @@
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
                             <div class="sex_and_link flex">
-                                <div class="sex">девочка</div>
+                                <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
                             <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
@@ -220,7 +255,7 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite button">В избранные</a>
+                                <a href="#" class="favorite">В избранные</a>
                             </div>
                         </div>
                     </div>
