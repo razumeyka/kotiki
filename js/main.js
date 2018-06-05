@@ -1,17 +1,11 @@
 $(document).ready(function(){
-    
-//mobile menu   
-    $( '.burger' ).click( function() { 
-        $( '.navbar' ).slideToggle();
-        $( '.burger' ).toggleClass( 'active' ); 
-    });
-
-    
+     
 // select 
     	$('.extended_search_button').click(function(e) { 
         e.preventDefault();
 		$('.extended_search').toggleClass('active');
-        $('.main_screen').toggleClass('active');
+        $('.main_screen').toggleClass('active'); 
+         $('.extended_search_button').toggleClass('active'); 
 	})
     
     	$('.select .select_field').click(function(){

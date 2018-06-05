@@ -22,20 +22,14 @@
                   </li>
               </ul>
             </nav>
-            <div class="burger_wrapper">
-            <a class="burger" href="#">
-            <span></span>
-            </a>
-            </div>
             <a href="#" class="announce">Подать объявление</a>
+            <a href="#" class="announce_mobile">+</a>
             <div class="messages">
                 <a class="message icon" href="#"></a>
                 <div class="quantity">8</div>
             </div>
             <a class="heart icon" href="#"></a>
-            <div class="login">
-               <a href="#">Войти</a> 
-            </div>
+            <a class="login" href="#"><span>Войти</span></a> 
         </div>
       </div>
     </header>
@@ -44,39 +38,37 @@
            <div class="cat_background"></div>
            <div class="inner">
                <h1>Собаки и кошки в добрые руки</h1>
-               <div class="friends">Друзей не покупают, а находят на neкobu.ru</div>
-               <div class="wpcf7">
-                    <form class="wpcf7-form">
-                        <span class="wpcf7-form-control-wrap">
-                            <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Введите ключевые слова">
-                            <div class="for_example">
-                                Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
-                            </div>
-                        </span>
-                        <span class="wpcf7-form-control-wrap">
-                            <div class="select cat_dog">
-                               <div class="select_field">
+               <div class="friends">Друзей не покупают, а находят на nekobu.ru</div>
+               <form class="form flex">
+                    <div class="input_wr line">
+                        <input type="text" name="key_words" value="" placeholder="Введите ключевые слова">
+                        <div class="for_example">
+                            Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
+                        </div>
+                    </div>
+                    <div class="select_input_wr line flex">
+                        <div class="select cat_dog">
+                           <div class="select_field">
+                               <div class="field cat"></div>
+                           </div>
+                           <ul>
+                               <li>
                                    <div class="field cat"></div>
-                               </div>
-                               <ul>
-                                   <li>
-                                       <div class="field cat"></div>
-                                   </li>
-                                   <li>
-                                       <div class="field dog"></div>
-                                   </li>
-                               </ul>
-                            </div>
-                        </span>
-                        <span class="wpcf7-form-control-wrap city">
-                            <input type="text" name="city" value="Москва" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-                        </span>
-                        <span class="wpcf7-form-control-wrap">
-                            <button>найти друга</button>
-                            <a class="extended_search_button" href="#">Расширенный поиск</a>
-                        </span>
-                    </form>
-                </div>
+                               </li>
+                               <li>
+                                   <div class="field dog"></div>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="for_icon">
+                            <input class="city" type="text" name="city" value="Москва">
+                        </div>
+                    </div>
+                    <div class="button_wr line">
+                        <button>найти друга</button>
+                        <a class="extended_search_button" href="#">Расширенный поиск</a>
+                    </div>
+                </form>
             </div>
        </div>
        <div class="extended_search flex">
@@ -101,7 +93,7 @@
                    <li class="dog">пушистенькая</li>
                </ul>
             </div>
-        </div>
+       </div>
     </section>
     <section class="advertisement_screen">
         <div class="wrapper">
@@ -113,7 +105,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -122,17 +114,18 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
+                    <div class="banner">Реклама от Google</div>
                     <div class="advertisement flex">
                         <div class="photo">
                             <img src="" alt="">
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -141,8 +134,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                     <div class="advertisement flex">
@@ -151,7 +144,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -160,17 +153,18 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
+                    <div class="banner">Локальная реклама</div>
                     <div class="advertisement flex">
                         <div class="photo">
                             <img src="" alt="">
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -179,8 +173,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                     <div class="advertisement flex">
@@ -189,7 +183,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -198,8 +192,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                     <div class="advertisement flex">
@@ -208,7 +202,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -217,8 +211,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                     <div class="advertisement flex">
@@ -227,7 +221,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex girl">девочка</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -236,8 +230,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                     <div class="advertisement flex">
@@ -246,7 +240,7 @@
                         </div>
                         <div class="info">
                             <h2>Милая кошечка Марта мечтает о доме!</h2>
-                            <div class="sex_and_link flex">
+                            <div class="sex_and_link">
                                 <div class="sex boy">мальчик</div>
                                 <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                             </div>
@@ -255,8 +249,8 @@
                                 <div class="detail date">сегодня</div>
                                 <div class="detail viewers">189</div>
                                 <div class="detail number">151007</div>
-                                <a href="#" class="favorite">В избранные</a>
                             </div>
+                            <a href="#" class="favorite">В избранные</a>
                         </div>
                     </div>
                 </div>
@@ -309,9 +303,9 @@
                    </div>
                </div>
                <div class="social_icons">
-                   <div class="facebook icon"></div>
-                   <div class="vk icon"></div>
-                   <div class="insta icon"></div>
+                   <a href="#" class="facebook icon"></a>
+                   <a href="#" class="vk icon"></a>
+                   <a href="#" class="insta icon"></a>
                </div>
             </div>
         </div>
