@@ -270,7 +270,7 @@ header .login::before {
     font-weight: 700;
     text-align: center;
     line-height: 1.3;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 .main_screen .friends {
@@ -702,7 +702,7 @@ header .login::before {
 } 
 
 .search_screen .columns .column {
-    padding-right: 120px;
+    padding-right: 145px;
 }
 
 .search_screen .columns a {
