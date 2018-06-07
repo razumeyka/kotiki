@@ -40,28 +40,30 @@
                <h1>Собаки и кошки в добрые руки</h1>
                <div class="friends">Друзей не покупают, а находят на nekobu.ru</div>
                <form class="form flex">
-                    <div class="input_wr line">
-                        <input type="text" name="key_words" value="" placeholder="Введите ключевые слова">
-                        <div class="for_example">
-                            Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
+                    <div class="select_input_wr">
+                        <div class="input_wr line">
+                            <input type="text" name="key_words" value="" placeholder="Введите ключевые слова">
+                            <div class="for_example">
+                                Например: <a href="#">персидская</a>, <a href="#">рыжая</a>, <a href="#">стерилизованная</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="select_input_wr line flex">
-                        <div class="select cat_dog">
-                           <div class="select_field">
-                               <div class="field cat"></div>
-                           </div>
-                           <ul>
-                               <li>
+                        <div class="cat_dog_city_wr line">
+                            <div class="select cat_dog">
+                               <div class="select_field">
                                    <div class="field cat"></div>
-                               </li>
-                               <li>
-                                   <div class="field dog"></div>
-                               </li>
-                           </ul>
-                        </div>
-                        <div class="for_icon">
-                            <input class="city" type="text" name="city" value="Москва">
+                               </div>
+                               <ul>
+                                   <li class="cat_img">
+                                       <div class="field cat"></div>
+                                   </li>
+                                   <li class="dog_img">
+                                       <div class="field dog"></div>
+                                   </li>
+                               </ul>
+                            </div>
+                            <div class="for_icon">
+                                <input class="city" type="text" name="city" value="Москва">
+                            </div>
                         </div>
                     </div>
                     <div class="button_wr line">
@@ -71,27 +73,29 @@
                 </form>
             </div>
        </div>
-       <div class="extended_search flex">
-            <div class="select">
-               <div class="select_field">Пол: любой</div>
-               <ul>
-                   <li class="cat">девочка</li>
-                   <li class="dog">мальчик</li>
-               </ul>
-            </div>
-            <div class="select">
-               <div class="select_field">Размер: любой</div>
-               <ul>
-                   <li class="cat">большой</li>
-                   <li class="dog">маленький</li>
-               </ul>
-            </div>
-            <div class="select">
-               <div class="select_field">Шерсть: любая</div>
-               <ul>
-                   <li class="cat">гладенькая</li>
-                   <li class="dog">пушистенькая</li>
-               </ul>
+       <div class="extended_search">
+            <div class="extended_search_wr">
+                <div class="select">
+                   <div class="select_field">Пол: любой</div>
+                   <ul>
+                       <li class="cat">девочка</li>
+                       <li class="dog">мальчик</li>
+                   </ul>
+                </div>
+                <div class="select">
+                   <div class="select_field">Размер: любой</div>
+                   <ul>
+                       <li class="cat">большой</li>
+                       <li class="dog">маленький</li>
+                   </ul>
+                </div>
+                <div class="select">
+                   <div class="select_field">Шерсть: любая</div>
+                   <ul>
+                       <li class="cat">гладенькая</li>
+                       <li class="dog">пушистенькая</li>
+                   </ul>
+                </div>
             </div>
        </div>
     </section>

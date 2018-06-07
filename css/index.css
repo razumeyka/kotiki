@@ -71,6 +71,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+button, textarea, input {
+    font-family: 'Muller'; 
+}
+
 a{
     font-size: 13px;
     color: rgb(34, 154, 255);
@@ -141,7 +145,7 @@ header .announce {
     font-weight: 500;
     color: rgb(0, 112, 61);
     line-height: 42px;
-    margin: auto 6px auto 18px;
+    margin: auto 8px auto 18px;
     text-align: center;
     outline: none;
     box-sizing: border-box;
@@ -213,7 +217,7 @@ header .login::before {
     content: "";
     background: url(../images/sprites.svg) -130px -9px;
     width: 17px;
-	height: 17px;
+	height: 18px;
     position: absolute;
     top: 12px;
     left: 0;
@@ -240,12 +244,17 @@ header .login::before {
 }
 
 .main_screen .cat_background {
-    background: url(../images/Cat&Dog-pic.png) no-repeat;
+    background: url(../images/Cat&Dog-pic.png) no-repeat left;
     width: 385px;
     height: 400px;
     position: absolute;
     left: -110px;
     bottom: -15px;
+}
+
+.main_screen .cat_background.active {
+    background: url(../images/Cat&Dog-pic.png) no-repeat right;
+    left: -150px;
 }
 
 .main_screen.active .cat_background {
@@ -271,18 +280,28 @@ header .login::before {
 
 .main_screen .form {
     flex-wrap: nowrap;
-    justify-content: center;
     margin-top: 43px;
     position: relative;
 }
 
 .main_screen .form .input_wr {
-    width: 33.3333%;
+    flex: 1;
+}
+
+.main_screen .form .input_wr input {
+    width: 100%;
 }
 
 .main_screen .form .select_input_wr {
+    flex: 1;
+    display: flex;
     flex-wrap: nowrap;
-    width: 33.3333%;
+}
+
+.main_screen .form .cat_dog_city_wr {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .main_screen .form input {
@@ -387,7 +406,7 @@ header .login::before {
 }
 
 .main_screen .form .select.cat_dog ul{
-    width: 96%;
+    width: calc(100% - 6px);
     margin: 0 3px;
 }
 
@@ -472,6 +491,7 @@ header .login::before {
 
 .main_screen .extended_search {
     display: none;
+    flex-wrap: nowrap;
     justify-content: center;
     background-color: rgba(0, 112, 61, 0.3);
     position: absolute;
@@ -481,9 +501,11 @@ header .login::before {
     height: 112px;
 }
 
-.main_screen .extended_search.active {
+.main_screen.active .extended_search_wr {
     display: flex;
     flex-wrap: nowrap;
+    max-width: 1050px;
+    margin: 0 auto;
 }
 
 .main_screen .extended_search .select {
@@ -744,6 +766,10 @@ footer .second_line .developers {
         padding: 0 15px;
     }
     
+    .main_screen .cat_background {
+        left: -80px;
+    }
+    
     .main_screen .form .input_wr .for_example {
         display: none;
     }
@@ -771,6 +797,7 @@ footer .second_line .developers {
         width: 170px;
         margin-left: 10px;
     }
+}
 
 @media screen and (max-width: 767px) {
     header {
@@ -812,17 +839,21 @@ footer .second_line .developers {
         margin-top: 19px;
     }
     
+     .main_screen .select_input_wr {
+        flex-direction: column;
+    }
+    
     .main_screen .form .line {
         width: 100%;
         margin-bottom: 5px;
     }
     
     .main_screen .select.cat_dog .select_field {
-        margin: 0 3px 0 0;
+        margin: 0 5px 0 0;
     }
     
     .main_screen .form .select.cat_dog ul {
-        width: 97%;
+        width: calc(100% - 5px);
         margin: 0;
     }
     
