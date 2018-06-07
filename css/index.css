@@ -361,7 +361,7 @@ header .login::before {
     line-height: 60px;
     padding: 0 20px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .main_screen .select.cat_dog .select_field {
@@ -408,6 +408,7 @@ header .login::before {
 .main_screen .form .select.cat_dog ul{
     width: calc(100% - 6px);
     margin: 0 3px;
+    z-index: 2;
 }
 
 .select.active ul {
@@ -499,6 +500,7 @@ header .login::before {
     left: 0;
     right: 0;
     height: 112px;
+    z-index: 1;
 }
 
 .main_screen.active .extended_search_wr {
