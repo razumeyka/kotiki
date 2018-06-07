@@ -226,9 +226,7 @@ header .login::before {
 /* main_screen */
 
 .main_screen {
-    background: url(../images/pattern.svg) center, linear-gradient(to top, #54d169, #a1eb76);
-    display: flex;
-    min-height: 388px;
+    background: url(../images/pattern.svg) center, linear-gradient(to top, #54d169, #a1eb76); 
     position: relative;
     overflow: hidden;
 }
@@ -241,6 +239,7 @@ header .login::before {
 .main_screen .wrapper {
     position: relative;
     display: flex;
+    padding: 87px 15px;
 }
 
 .main_screen .cat_background {
@@ -248,13 +247,12 @@ header .login::before {
     width: 385px;
     height: 400px;
     position: absolute;
-    left: -110px;
-    bottom: -15px;
+    left: 0px;
+    bottom: -25px;
 }
 
 .main_screen .cat_background.active {
     background: url(../images/Cat&Dog-pic.png) no-repeat right;
-    left: -150px;
 }
 
 .main_screen.active .cat_background {
@@ -263,6 +261,8 @@ header .login::before {
 
 .main_screen .inner {
     margin: auto;
+    width: 100%;
+    max-width: 1030px;
 }
 
 .main_screen h1 {
@@ -279,7 +279,6 @@ header .login::before {
 }
 
 .main_screen .form {
-    flex-wrap: nowrap;
     margin-top: 43px;
     position: relative;
 }
@@ -328,7 +327,7 @@ header .login::before {
 
 .main_screen .form .for_icon {
     position: relative;
-    width: 100%;
+    width: 37%;
 }
 
 .main_screen .form .for_icon::before{
@@ -353,6 +352,11 @@ header .login::before {
     position: relative;
 }
 
+.main_screen .select.cat_dog{ 
+    min-width: 100px;
+    margin: 0 3px;
+}
+
 .main_screen .select .select_field {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -365,8 +369,7 @@ header .login::before {
 }
 
 .main_screen .select.cat_dog .select_field {
-    width: 100px;
-    margin: 0 3px;
+    width: 100%;
 }
 
 .select .select_field:before{
@@ -375,8 +378,8 @@ header .login::before {
     width: 14px;
     height: 10px;
     background: url(../images/sprites.svg) -277px -97px;
-    top: 25px;
-    right: 20px;
+    top: 26px;
+    right: 18px;
     -webkit-transition: all 0.5s linear 0s;
     -moz-transition: all 0.5s linear 0s;
     -o-transition: all 0.5s linear 0s;
@@ -406,8 +409,6 @@ header .login::before {
 }
 
 .main_screen .form .select.cat_dog ul{
-    width: calc(100% - 6px);
-    margin: 0 3px;
     z-index: 2;
 }
 
@@ -454,17 +455,22 @@ header .login::before {
     width: 38px;
 }
 
+
+.main_screen .form  .button_wr{
+    width: 206px;	
+    margin-left: 20px;
+}
+
 .main_screen .form  button {
     background-color: rgb(0, 112, 61);
-    width: 206px;
     height: 60px;
+	width:100%;
     line-height: 60px;
     font-size: 16px;
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     border: none;
-    margin-left: 20px;
     outline: none;
     box-sizing: border-box;
 	cursor:pointer;
@@ -768,8 +774,8 @@ footer .second_line .developers {
         padding: 0 15px;
     }
     
-    .main_screen .cat_background {
-        left: -80px;
+    .main_screen .cat_background.active {
+        left: -105px;
     }
     
     .main_screen .form .input_wr .for_example {
@@ -794,11 +800,16 @@ footer .second_line .developers {
      .main_screen .cat_background {
         display: none;
     }
-    
-    .main_screen .form button {
-        width: 170px;
-        margin-left: 10px;
-    }
+	
+	.main_screen .form .button_wr{
+		width: 172px;
+		margin-left: 10px;
+	}
+	
+	.main_screen .form .for_icon{
+		width: 33%;
+	}
+     
 }
 
 @media screen and (max-width: 767px) {
@@ -823,8 +834,8 @@ footer .second_line .developers {
         display: inline-block;
     }
     
-    .main_screen {
-        height: 457px;
+    .main_screen .wrapper {
+        padding: 64px 15px;
     }
     
     .main_screen h1 {
@@ -841,28 +852,33 @@ footer .second_line .developers {
         margin-top: 19px;
     }
     
-     .main_screen .select_input_wr {
-        flex-direction: column;
+    .main_screen .form .select_input_wr {
+        flex-wrap: wrap;
     }
     
-    .main_screen .form .line {
+    .main_screen .form .input_wr {
+        flex: auto;
         width: 100%;
         margin-bottom: 5px;
     }
     
-    .main_screen .select.cat_dog .select_field {
+    .main_screen .select.cat_dog {
         margin: 0 5px 0 0;
     }
     
-    .main_screen .form .select.cat_dog ul {
-        width: calc(100% - 5px);
-        margin: 0;
+    .main_screen .form .for_icon {
+        width: 84%;
+        flex: 1;
+    }
+    
+    .main_screen .form .button_wr {
+        width: 100%;
+        margin: 22px 0 12px;
     }
     
     .main_screen .form button {
-        width: 100%;
-        margin: 15px 0;
         height: 70px;
+        letter-spacing: 1.8px;
     }
     
     .main_screen .for_example {
