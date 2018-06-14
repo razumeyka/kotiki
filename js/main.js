@@ -28,4 +28,25 @@ $(document).ready(function(){
 		$(this).closest('.select').find('.select_field').html($(this).html());
 		$(this).closest('.select').toggleClass('active');
 	})	
+    
+// list-or-grid
+        $('.advertisements').addClass('active');
+        $('.list').addClass('active'); 
+
+        $('.grid').click(function(e) { 
+        e.preventDefault();
+		$('.advertisements').removeClass('active');
+        $('.ads').addClass('active');
+        $('.grid').addClass('active');
+        $('.list').removeClass('active');
+	})
+    
+        $('.list').click(function(e) { 
+        e.preventDefault();
+		$('.advertisements').addClass('active');
+        $('.ads').removeClass('active');
+        $('.list').addClass('active'); 
+        $('.grid').removeClass('active');
+	})
+    
 });

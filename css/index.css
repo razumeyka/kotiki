@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'),  url('MullerLight.otf')  format('opentype'),
+  src: url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/MullerLight.otf')  format('opentype'),
 	     url('../fonts/MullerLight.woff') format('woff'), url('../fonts/MullerLight.ttf')  format('truetype'), url('../fonts/MullerLight.svg#MullerLight') format('svg');
   font-weight: 300;
   font-style: normal;
@@ -348,7 +348,7 @@ header .login::before {
     margin-top: 6px;
 }
 
-.main_screen .select {
+.select {
     position: relative;
 }
 
@@ -357,7 +357,7 @@ header .login::before {
     margin: 0 3px;
 }
 
-.main_screen .select .select_field {
+.select .select_field {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     width: 300px;
@@ -394,7 +394,7 @@ header .login::before {
     transform: rotate(180deg);
 }
 
-.main_screen .select ul {
+.select ul {
     display: none;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
@@ -416,7 +416,7 @@ header .login::before {
 	display:block;
 }
 
-.main_screen .select ul li {
+.select ul li {
     display: block;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -429,7 +429,7 @@ header .login::before {
 	cursor:default;
 }
 
-.main_screen .select ul li:hover {
+.select ul li:hover {
     background-color: #ebebeb;
 }
 
@@ -496,7 +496,7 @@ header .login::before {
     right: 155px;
 }
 
-.main_screen .extended_search {
+.extended_search {
     display: none;
     flex-wrap: nowrap;
     justify-content: center;
@@ -516,12 +516,12 @@ header .login::before {
     margin: 0 auto;
 }
 
-.main_screen .extended_search .select {
+.extended_search .select {
     margin: 25px 10px 0;
     width: 33.3333%;
 }
 
-.main_screen .extended_search .select_field {
+.extended_search .select_field {
     font-size: 18px;
     width: 100%;
 }
@@ -765,8 +765,318 @@ footer .second_line .developers {
     font-weight: 300;
 }
 
-/* Media */
+/* ads_page */
 
+.ads.main_screen  {
+   overflow: visible; 
+}
+
+.ads.main_screen.active {
+   padding: 0;
+}
+
+.ads.main_screen .wrapper {
+    padding: 30px 15px;
+}
+
+.ads.main_screen .inner {
+    max-width: none;
+}
+
+.ads.main_screen .inner .form {
+    margin: 0;
+}
+
+.ads.main_screen .form .for_icon {
+    width: 35%;
+}
+
+/* ads_page advertisement_screen */
+
+.advertisement_screen {
+    padding: 27px 0 17px;
+}
+
+.advertisement_screen .breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+}
+
+.advertisement_screen .breadcrumbs li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-right: 10px;
+}
+
+.advertisement_screen .breadcrumbs li a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+}
+
+.advertisement_screen .breadcrumbs .icon::before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -44px -361px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: -8px;
+}
+
+.advertisement_screen .breadcrumbs .current_page {
+    padding: 0 10px;
+}
+
+.advertisement_screen .extended_search {
+    display: block;
+    background: none;
+    position: static;
+    height: auto;
+    margin: 22px 0;
+}
+
+.advertisement_screen .extended_search_wr {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.advertisement_screen .extended_search .select {
+    margin: 0 10px 0 0;
+    border: 1px solid rgb(204, 204, 204);
+    width: 178px;
+    height: 34px;
+}
+
+.advertisement_screen .extended_search .select_field {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.advertisement_screen .select .select_field:before {
+    background: yellow;
+    top: 13px;
+    right: 7px;
+    width: 15px;
+    height: 8px;
+}
+
+.advertisement_screen .select ul {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+    top: 34px;
+}
+
+.advertisement_screen .select ul li {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.advertisement_screen .ads_nav .icon {
+    font-size: 14px;
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+    padding-left: 25px;
+    position: relative;
+    margin: auto 0 auto 17px;
+}
+
+.advertisement_screen .ads_nav .icon.list.active {
+    color: rgb(0, 0, 0);
+}
+
+.advertisement_screen .ads_nav .icon.grid.active {
+    color: rgb(0, 0, 0);
+}
+
+.advertisement_screen .ads_nav .icon::before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -132px -395px;
+	width: 21px;
+	height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.advertisement_screen .ads_nav .icon.grid::before {
+    background: url(../images/sprites.svg) no-repeat -90px -395px;
+}
+
+.advertisement_screen .ads_nav .icon.list.active::before {
+    background: url(../images/sprites.svg) no-repeat -132px -355px;
+}
+
+.advertisement_screen .ads_nav .icon.grid.active::before {
+    background: url(../images/sprites.svg) no-repeat -90px -355px;
+}
+
+.advertisement_screen .left h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.advertisement_screen .left .ads_quantity {
+    font-size: 14px;
+    color: rgb(108, 108, 108);
+    margin: 3px 0;
+}
+
+.advertisement_screen .left .advertisements {
+    display: none;
+}
+
+.advertisement_screen .left .ads {
+    display: none;
+    margin: 0 -15px;
+}
+
+.advertisement_screen .left .advertisements.active {
+    display: block;
+}
+
+.advertisement_screen .left .ads.active {
+    display: flex;
+}
+
+.advertisement_screen .left .ads .advertisement {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 15px;
+    border: none;
+    margin: 0;
+}
+
+.advertisement_screen .left .ads .advertisement .ad_wr {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+
+.advertisement_screen .left .ads .advertisement:hover .ad_wr {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.advertisement_screen .left .ads .advertisement .photo {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.advertisement_screen .left .ads .photo .heart_icon {
+    display: none;
+    background: url('../images/sprites.svg') -60px -999px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.advertisement_screen .ads .advertisement:hover .heart_icon{
+    display: block; 
+}
+
+.advertisement_screen .left .ads .advertisement .info {
+    padding: 8px 15px 20px;
+}
+
+.advertisement_screen .left .ads .info .ad_link {
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    font: 500 18px "Muller";
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+
+.advertisement_screen .left .ads .advertisement .info .date {
+    padding: 0 0 0 20px;
+}
+
+/* pagination */
+
+.pagination {
+    margin: 35px 0 25px;
+}
+
+.pagination .pagination-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.pagination .pagination-list li {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #ffffff;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.pagination .pagination-list li:hover {
+    background-color: #c4c4c4;
+}
+
+.pagination .pagination-list li:hover a {
+    color: #ffffff;
+}
+
+.pagination .pagination-list li a {
+    font: 300 18px "Muller";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 37px;
+    text-decoration: none;
+}
+
+.pagination .pagination-list .points a {
+  font-size: 25px;
+  color: rgb(196, 196, 196);
+}
+
+.pagination .pagination-list .page {
+    position: relative;
+}
+
+.pagination .pagination-list .page::before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -13px -361px;
+	width: 11px;
+	height: 11px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.pagination .pagination-list .page.next::before {
+    background: url(../images/sprites.svg) no-repeat -44px -361px;
+}
+
+/* Media */
 
 @media screen and (max-width: 1279px) {
     
@@ -807,8 +1117,7 @@ footer .second_line .developers {
 	
 	.main_screen .form .for_icon{
 		width: 33%;
-	}
-     
+	}    
 }
 
 @media screen and (max-width: 767px) {
