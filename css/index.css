@@ -793,7 +793,7 @@ footer .second_line .developers {
 
 /* ads_page advertisement_screen */
 
-.advertisement_screen {
+.advertisement_screen.ads_page {
     padding: 27px 0 17px;
 }
 
@@ -1249,7 +1249,14 @@ footer .second_line .developers {
     footer .developers {
         display: none;
     }
-
+    
+    .advertisement_screen .left .ads .advertisement {
+        width: 50%;
+    }
+    
+    .advertisement_screen .left .ads .advertisement .info {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 500px) {
