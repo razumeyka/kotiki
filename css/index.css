@@ -937,11 +937,10 @@ footer .second_line .developers {
 .advertisement_screen .left .ads_quantity {
     font-size: 14px;
     color: rgb(108, 108, 108);
-    margin: 3px 0;
 }
 
 .advertisement_screen .advertisements_wr {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .advertisement_screen .advertisements_wr.plate {
