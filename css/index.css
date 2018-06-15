@@ -1118,6 +1118,10 @@ footer .second_line .developers {
 	.main_screen .form .for_icon{
 		width: 33%;
 	}    
+    
+    .advertisement_screen .left .ads .advertisement {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1250,12 +1254,15 @@ footer .second_line .developers {
         display: none;
     }
     
-    .advertisement_screen .left .ads .advertisement {
-        width: 50%;
-    }
-    
     .advertisement_screen .left .ads .advertisement .info {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advertisement_screen .left .ads .advertisement {
+        width: 100%;
+        max-width: 400px;
     }
 }
 
