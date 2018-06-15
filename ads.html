@@ -69,10 +69,15 @@
         <div class="wrapper">
             <div class="columns flex">
                 <div class="left">
-                     <ol class="breadcrumbs">
-                        <li><a href="#"><span>Доска объявлений</span></a></li>
-                        <li class="icon"><span></span></li>
-                        <li class="current_page"><span></span>Кошки и котята в дар</li>
+                     <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">
+			                    <span itemprop="name">Доска объявлений</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li class="arrow"><span>></span></li>
+                        <li class="unactive"><span></span>Кошки и котята в дар</li>
                      </ol>
                      <div class="ads_nav flex between">
                          <div class="extended_search">
@@ -102,182 +107,165 @@
                         </div>
                         <div class="list_grid flex">
                             <a href="#" class="list icon">список</a>
-                            <a href="#" class="grid icon">сетка</a>
+                            <a href="#" class="grid icon">плитка</a>
                         </div>
                     </div>
                     <h1>Кошки в дар в Москве</h1>
                     <div class="ads_quantity">Найдено 1236 объявлений</div>
                     <div class="advertisements_wr">
                         <div class="advertisements">
-                             <div class="advertisement flex">
-                                <div class="photo">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="info">
-                                    <h2>Милая кошечка Марта мечтает о доме!</h2>
-                                    <div class="sex_and_link">
-                                        <div class="sex girl">девочка</div>
-                                        <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
-                                    </div>
-                                    <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
-                                    <div class="details">
-                                        <div class="detail date">сегодня</div>
-                                        <div class="detail viewers">189</div>
-                                        <div class="detail number">151007</div>
-                                    </div>
-                                    <a href="#" class="favorite">В избранные</a>
-                                </div>
-                            </div>
-                            <div class="advertisement flex">
-                                <div class="photo">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="info">
-                                    <h2>Милая кошечка Марта мечтает о доме!</h2>
-                                    <div class="sex_and_link">
-                                        <div class="sex boy">мальчик</div>
-                                        <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
-                                    </div>
-                                    <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
-                                    <div class="details">
-                                        <div class="detail date">сегодня</div>
-                                        <div class="detail viewers">189</div>
-                                        <div class="detail number">151007</div>
-                                    </div>
-                                    <a href="#" class="favorite">В избранные</a>
-                                </div>
-                            </div>
-                            <div class="advertisement flex">
-                                <div class="photo">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="info">
-                                    <h2>Милая кошечка Марта мечтает о доме!</h2>
-                                    <div class="sex_and_link">
-                                        <div class="sex girl">девочка</div>
-                                        <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
-                                    </div>
-                                    <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
-                                    <div class="details">
-                                        <div class="detail date">сегодня</div>
-                                        <div class="detail viewers">189</div>
-                                        <div class="detail number">151007</div>
-                                    </div>
-                                    <a href="#" class="favorite">В избранные</a>
-                                </div>
-                             </div>
-                        </div>
-                        <div class="ads flex">
-                            <div class="advertisement flex">
+                             <div class="advertisement">
                                 <div class="ad_wr">
-                                    <div class="photo">
+                                    <a href="#" class="photo">
                                         <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a> 
-                                    </div>
+                                        <div class="heart_icon"></div>
+                                    </a>
                                     <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
                                             <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                                         </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="advertisement flex">
-                                 <div class="ad_wr">
-                                    <div class="photo">
-                                        <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
-                                            <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="advertisement flex">
+                            <div class="advertisement">
                                 <div class="ad_wr">
-                                    <div class="photo">
+                                    <a href="#" class="photo">
                                         <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a>
-                                    </div>
+                                        <div class="heart_icon"></div>
+                                    </a>
                                     <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
                                             <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                                         </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="advertisement flex">
+                            <div class="advertisement">
                                 <div class="ad_wr">
-                                    <div class="photo">
+                                    <a href="#" class="photo">
                                         <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a>
-                                    </div>
+                                        <div class="heart_icon"></div>
+                                    </a>
                                     <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
                                             <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                                         </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="advertisement flex">
-                                 <div class="ad_wr">
-                                    <div class="photo">
-                                        <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
-                                            <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="advertisement flex">
+                            <div class="advertisement">
                                 <div class="ad_wr">
-                                    <div class="photo">
+                                    <a href="#" class="photo">
                                         <img src="" alt="">
-                                        <a href="#" class="heart_icon"></a>
-                                    </div>
+                                        <div class="heart_icon"></div>
+                                    </a>
                                     <div class="info">
-                                        <a href="#" class="ad_link">Милая кошечка Марта в..</a>
-                                        <div class="sex_date flex between">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
                                             <div class="sex girl">девочка</div>
-                                            <div class="detail date">сегодня</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
                                         </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advertisement">
+                                <div class="ad_wr">
+                                    <a href="#" class="photo">
+                                        <img src="" alt="">
+                                        <div class="heart_icon"></div>
+                                    </a>
+                                    <div class="info">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
+                                            <div class="sex girl">девочка</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
+                                        </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advertisement">
+                                <div class="ad_wr">
+                                    <a href="#" class="photo">
+                                        <img src="" alt="">
+                                        <div class="heart_icon"></div>
+                                    </a>
+                                    <div class="info">
+                                        <h2>Милая кошечка Марта мечтает о доме!</h2>
+                                        <div class="sex_and_link">
+                                            <div class="sex girl">девочка</div>
+                                            <a href="#">Отдам кошку — Москва, м. Авиамоторная</a>
+                                        </div>
+                                        <div class="description">Москва и Московская область! Ищет дом кошечка Мура! Мура родилась в ведомственном здании, где проживает кошачий прайд. Котенком ее выкормили лифтеры и коменданты, а затем вернули обратно – на произвол судьбы...</div>
+                                        <div class="details">
+                                            <div class="detail date">сегодня</div>
+                                            <div class="detail viewers">189</div>
+                                            <div class="detail number">151007</div>
+                                        </div>
+                                        <a href="#" class="favorite">В избранные</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="pagination">
+                        <nav class="pagination-list flex" role="navigation">
+                            <a class='page-numbers prev page' href='#'></a>
+                            <span aria-current='page' class='page-numbers current'>1</span>
+                            <a class='page-numbers' href='#'>2</a>
+                            <a class='page-numbers' href='#'>3</a>
+                            <a class='page-numbers' href='#'>4</a>
+                            <a class='page-numbers' href='#'>5</a>
+                            <a class='page-numbers points' href='#'>...</a>
+                            <a class='page-numbers' href='#'>9</a>
+                            <a class='page-numbers next page' href='#'></a>
+                        </nav> 
+                    </div>
                 </div>
                 <div class="right">
-                   <div class="banner1">Реклама от Google</div>
-                   <div class="banner2"></div>
+                       <div class="banner1">Реклама от Google</div>
+                       <div class="banner2"></div>
                 </div>
-            </div>
-            <div class="pagination">
-                <ul class="pagination-list">
-                <li class="prev page"><a title="" href=""></a></li>
-                <li><a title="1"  href="">1</a></li>
-                <li><a title="2" href="">2</a></li>
-                <li><a title="3" href="">3</a></li>
-                <li><a title="4" href="">4</a></li>
-                <li><a title="5" href="">5</a></li>
-                <li class="points"><a title="..." href="">...</a></li>
-                <li><a title="9" href="">9</a></li>
-                <li class="next page"><a title=""  href=""></a></li>
-                </ul>
             </div>
         </div>
     </section>
