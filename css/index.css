@@ -969,7 +969,7 @@ footer .second_line .developers {
 }
 
 .advertisement_screen .advertisements_wr.plate .advertisement:hover .ad_wr {
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
 .advertisement_screen .advertisements_wr.plate .advertisement .photo {
@@ -994,6 +994,7 @@ footer .second_line .developers {
 .advertisement_screen .advertisements_wr.plate .advertisement:hover .photo .heart_icon {
     display: block; 
 }
+
 .advertisement_screen .left .advertisements_wr.plate .info {
     width: auto;
     padding: 10px 15px 20px;
@@ -1011,23 +1012,7 @@ footer .second_line .developers {
     white-space: nowrap;
 }
 
-.advertisement_screen .advertisements_wr.plate .info .sex_and_link a {
-    display: none;
-}
-
-.advertisement_screen .advertisements_wr.plate .info .description {
-    display: none;
-}
-
-.advertisement_screen .advertisements_wr.plate .info .viewers {
-    display: none;
-}
-
-.advertisement_screen .advertisements_wr.plate .info .number {
-    display: none;
-}
-
-.advertisement_screen .advertisements_wr.plate .info .favorite {
+.advertisement_screen .advertisements_wr.plate .info .no_plate {
     display: none;
 }
 
