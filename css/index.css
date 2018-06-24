@@ -1163,7 +1163,7 @@ footer .second_line .developers {
 
 .advertisement_screen .left .button::before {
     content: "";
-    background: url('../images/sprites.svg') no-repeat  -86px -453px;
+    background: url('../images/sprites.svg') no-repeat  -84px -451px;
 	width: 30px;
 	height: 30px;
     position: absolute;
@@ -1290,7 +1290,7 @@ footer .second_line .developers {
 
 .advertisement_screen .right .button::before {
     content: "";
-    background: url('../images/sprites.svg') no-repeat -161px -573px;
+    background: url('../images/sprites.svg') no-repeat -159px -571px;
 	width: 31px;
 	height: 30px;
     position: absolute;
@@ -1299,7 +1299,7 @@ footer .second_line .developers {
 }
 
 .advertisement_screen .right .up.button::before {
-    background-position: -238px -573px;
+    background-position: -236px -571px;
 }
 
 .advertisement_screen .right .premium.button {
@@ -1308,7 +1308,7 @@ footer .second_line .developers {
 }
 
 .advertisement_screen .right .premium.button::before {
-    background-position: -321px -573px;
+    background-position: -319px -571px;
 }
 
 .advertisement_screen .right .social.button {
@@ -1317,7 +1317,7 @@ footer .second_line .developers {
 }
 
 .advertisement_screen .right .social.button::before {
-    background-position: -401px -573px;
+    background-position: -399px -571px;
 }
 
 .advertisement_screen .right .happy_pets {
