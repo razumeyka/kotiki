@@ -833,7 +833,7 @@ footer .second_line .developers {
 }
 
 .advertisement_screen .ads_nav {
-    padding: 20px 0;
+    margin: 20px 0;
 }
 
 .advertisement_screen .extended_search {
@@ -979,7 +979,7 @@ footer .second_line .developers {
     position: relative;
 }
 
-.advertisement_screen .photo .heart_icon {
+.advertisement_screen .heart_icon {
     display: none;
     background: url('../images/sprites.svg') -60px -999px rgba(255, 255, 255, 0.8);
     border-radius: 50%;
@@ -1049,7 +1049,7 @@ footer .second_line .developers {
   color: rgb(196, 196, 196);
 }
 
-.pagination .pagination-list .page-numbers:active {
+.pagination .pagination-list .page-numbers.current {
     background-color: #c4c4c4;
     color: #ffffff;
 }
@@ -1091,7 +1091,7 @@ footer .second_line .developers {
     overflow: hidden;
 }
 
-.advertisement_screen.ad_page .left h2{
+.advertisement_screen.ad_page .left h1 {
     font: 700 28px "Muller";
 }
 
@@ -1129,7 +1129,15 @@ footer .second_line .developers {
     width: 100%;
 }
 
-.advertisement_screen .left .main_photo:hover .photo .heart_icon {
+.advertisement_screen.ad_page .main_photo .heart_icon {
+    background: url('../images/sprites.svg') -1px -432px rgba(255, 255, 255, 0.8);
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.advertisement_screen .left .main_photo:hover .heart_icon {
     display: block; 
 }
 
@@ -1156,9 +1164,13 @@ footer .second_line .developers {
     outline: none;
     text-decoration: none;
     cursor: pointer;
-    margin: 5px 3px 13px 0;
-    padding: 0 20px 0 60px;
+    margin: 5px 7px 13px 0;
+    padding: 0 20px 0 70px;
     position: relative;
+}
+
+.advertisement_screen .left .button span {
+    padding-left: 12px;
 }
 
 .advertisement_screen .left .button::before {
@@ -1333,6 +1345,7 @@ footer .second_line .developers {
     background: #f5f4f4;
     border: 2px solid rgb(0, 112, 61);
     color: rgb(0, 112, 61);
+    font-weight: 400;
     padding: 0 23px;
     margin-top: 18px;
 }
@@ -1356,8 +1369,22 @@ footer .second_line .developers {
         display: none;
     }
     
+    .advertisement_screen.ad_page .left {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .advertisement_screen .left .button {
+        width: 100%;
+    }
+    
     .advertisement_screen .columns .right {
         display: none;
+    }
+    
+    .advertisement_screen.ad_page .columns .right {
+        display: block;
+        margin-left: 30px;
     }
     
     .advertisement_screen .banner {
@@ -1389,6 +1416,23 @@ footer .second_line .developers {
     
     .advertisement_screen .advertisements_wr.plate .advertisement {
         width: 50%;
+    }
+    
+    .advertisement_screen.ad_page .left h1 {
+        line-height: 1.2;
+    }
+    
+    .advertisement_screen.ad_page .left .search_details {
+        margin: 7px 0 20px;
+    }
+    
+    .advertisement_screen.ad_page .left .search_details a {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    
+    .advertisement_screen.ad_page .left .search_details .age {
+        display: none;
     }
 }
 
@@ -1443,7 +1487,7 @@ footer .second_line .developers {
     }
     
     .main_screen .form input {
-        font-size:16px
+        font-size:16px;
     }
     
     .main_screen .select.cat_dog {
@@ -1477,10 +1521,61 @@ footer .second_line .developers {
         padding: 170px 0 14px;
     }
     
+    .advertisement_screen .breadcrumbs {
+        display: none;
+    }
+    
     .advertisement_screen .left .info {
         flex: auto;
         width: 100%;
         padding: 0;
+    }
+        
+    .advertisement_screen .left .ads_nav {
+        display: none;
+    }
+    
+    .advertisement_screen .left .ads .advertisement .info {
+        width: auto;
+    }
+    
+    .advertisement_screen.ad_page .columns {
+        flex-direction: column;
+    }
+    
+    .advertisement_screen .left .main_photo {
+        margin-bottom: 15px;
+    }
+    
+    .advertisement_screen .left .photos .fancy_wr {
+        width: 100%;
+    }
+    
+    .advertisement_screen.ad_page .left .tel_caption {
+        font-size: 19px;
+        border-top: none;
+        padding: 0 0 13px;
+    }
+    
+    .advertisement_screen .left .button {
+        padding: 0 20px;
+    }
+    
+    .advertisement_screen .left .button::before {
+        display: none;
+    }
+    
+    .advertisement_screen.ad_page .columns .right {
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    .advertisement_screen .right .remove.button {
+        text-align: center;
+    }
+    
+    .advertisement_screen .right .happy_pets {
+        padding: 27px 20px 20px;;
     }
     
     .search_screen h3 {
@@ -1524,14 +1619,6 @@ footer .second_line .developers {
     
     footer .developers {
         display: none;
-    }
-    
-    .advertisement_screen .left .ads_nav {
-        display: none;
-    }
-    
-    .advertisement_screen .left .ads .advertisement .info {
-        width: auto;
     }
 }
 
@@ -1602,5 +1689,3 @@ footer .second_line .developers {
         padding: 15px 0;
     }
 }
-
-width: 100%;
