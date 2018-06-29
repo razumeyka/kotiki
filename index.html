@@ -34,12 +34,13 @@
       </div>
     </header>
     <section class="main_screen">
+      <form action="">
        <div class="wrapper">
            <div class="cat_background"></div>
            <div class="inner">
                <h1>Собаки и кошки в добрые руки</h1>
                <div class="friends">Друзей не покупают, а находят на nekobu.ru</div>
-               <form class="form flex">
+               <div class="form flex">
                     <div class="select_input_wr">
                         <div class="input_wr">
                             <input type="text" name="key_words" value="" placeholder="Введите ключевые слова">
@@ -48,6 +49,7 @@
                             </div>
                         </div> 
                         <div class="select cat_dog">
+                           <input type="hidden" name="cat_dog" value="cat_dog">
                            <div class="select_field">
                                <div class="field cat"></div>
                            </div>
@@ -68,13 +70,13 @@
                         <button>найти друга</button>
                         <a class="extended_search_button" href="#">Расширенный поиск</a>
                     </div>
-                </form>
+                </div>
             </div>
        </div>
        <div class="extended_search">
-            <form class="extended_search_wr">
+            <div class="extended_search_wr">
                 <div class="select">
-                   <input type="hidden" name="sex" value="">
+                   <input type="hidden" name="sex" value="sex">
                    <div class="select_field">Пол: любой</div>
                    <ul>
                        <li class="cat">девочка</li>
@@ -82,7 +84,7 @@
                    </ul>
                 </div>
                 <div class="select">
-                   <input type="hidden" name="sex" value="">
+                   <input type="hidden" name="size" value="size">
                    <div class="select_field">Размер: любой</div>
                    <ul>
                        <li class="cat">большой</li>
@@ -90,15 +92,16 @@
                    </ul>
                 </div>
                 <div class="select">
-                   <input type="hidden" name="sex" value="">
+                   <input type="hidden" name="hairstyle" value="hairstyle">
                    <div class="select_field">Шерсть: любая</div>
                    <ul>
                        <li class="cat">гладенькая</li>
                        <li class="dog">пушистенькая</li>
                    </ul>
                 </div>
-            </form>
+            </div>
        </div>
+      </form>
     </section>
     <section class="advertisement_screen">
         <div class="wrapper">
